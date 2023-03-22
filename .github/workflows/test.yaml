@@ -23,6 +23,10 @@ jobs:
           node-version: "16.x"
       - run: npm install --save --legacy-peer-deps
       - run: npm run test
+      - name: Upload test Coverage
+        uses: actions/upload-artifact@v3
+        with:
+          path: build
       - name: Build Project
         if: github.event_name == 'push'
         run: npm run build
