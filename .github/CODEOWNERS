@@ -1,0 +1,4 @@
+* @apykwan
+*.js @apykwan
+*.yml @apykwan
+/public/ @apykwan
